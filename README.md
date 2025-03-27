@@ -1,6 +1,3 @@
-Here's the neatly formatted `README.md` file with a section for the screenshot and proper code explanations:
-
-```markdown
 # PubMed Paper Fetcher
 
 ## Overview
