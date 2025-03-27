@@ -104,7 +104,8 @@ For example:
 Below is a screenshot of the program output for a sample search query:
 
 ![Program Output 1](https://github.com/user-attachments/assets/b5cd52a3-730a-4431-95ed-0f1698b14936)
-![Program Output 2](https://github.com/user-attachments/assets/e39b0a83-2810-4c2d-a716-6419223ee0bd)
+![image](https://github.com/user-attachments/assets/720153d9-18c4-490a-b976-e6f5bec55ac3)
+ ![Program Output 2](https://github.com/user-attachments/assets/e39b0a83-2810-4c2d-a716-6419223ee0bd)
 ![Program Output 3](https://github.com/user-attachments/assets/fa52068c-87aa-4cf7-8b1d-c0184e5165d2)
 
 ## Command-line Program Features
