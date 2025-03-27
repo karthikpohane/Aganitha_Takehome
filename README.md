@@ -107,10 +107,6 @@ Below is a screenshot of the program output for a sample search query:
 ![Program Output 2](https://github.com/user-attachments/assets/e39b0a83-2810-4c2d-a716-6419223ee0bd)
 ![Program Output 3](https://github.com/user-attachments/assets/fa52068c-87aa-4cf7-8b1d-c0184e5165d2)
 
-Here's an updated section for your `README.md` to include the command-line program features and the options provided:
-
----
-
 ## Command-line Program Features
 
 The program allows you to fetch research papers based on a user-specified query using the PubMed API. The following options are available when executing the program via the command line:
