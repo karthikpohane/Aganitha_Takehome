@@ -107,6 +107,42 @@ Below is a screenshot of the program output for a sample search query:
 ![Program Output 2](https://github.com/user-attachments/assets/e39b0a83-2810-4c2d-a716-6419223ee0bd)
 ![Program Output 3](https://github.com/user-attachments/assets/fa52068c-87aa-4cf7-8b1d-c0184e5165d2)
 
+Here's an updated section for your `README.md` to include the command-line program features and the options provided:
+
+---
+
+## Command-line Program Features
+
+The program allows you to fetch research papers based on a user-specified query using the PubMed API. The following options are available when executing the program via the command line:
+
+### Accepts Query as a Command-line Argument:
+You can specify the query to search for papers directly in the command line.
+
+```bash
+poetry run get-papers-list "your query here"
+```
+
+### Command-line Options:
+The following command-line options are available to customize your execution:
+
+- **`-h` or `--help`**: Displays usage instructions and available options.
+
+    ```bash
+    poetry run get-papers-list -h
+    ```
+
+- **`-d` or `--debug`**: Enables debug information during execution, which can help with troubleshooting or understanding the flow of the program. This option will print additional debug logs.
+
+    ```bash
+    poetry run get-papers-list -d "your query here"
+    ```
+
+- **`-f` or `--file`**: Specifies the filename where the results will be saved. If this option is not provided, the program will print the results to the console by default.
+
+    ```bash
+    poetry run get-papers-list -f results.csv "your query here"
+    ```
+
 ## Contributing
 
 Please feel free to fork the repository and submit pull requests. If you find any bugs or have suggestions for improvements, please open an issue.
