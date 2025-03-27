@@ -62,6 +62,10 @@ Follow these steps to set up the project and run the code:
 
    This will print out a list of paper details based on your search query. You can also modify the script to save the data in CSV format or perform other operations.
 
+   ```
+   poetry run get-papers-list "cancer immunotherapy" -f results.csv
+   ```
+
 ## Tools and Libraries Used
 
 - **` requests`**: A simple HTTP library for Python that allows you to send HTTP requests to the PubMed API.
@@ -90,9 +94,9 @@ For example:
         "PubmedID": "40145190",
         "Title": "Antibiotic prophylaxis when taking corticosteroids."
         "Publication Date": "2025 Mar 26",
-        "Non-academic Authors": ["John Doe"],
+        "Non-academic Authors": ["Karthik Pohane"],
         "Company Affiliations": ["XYZ Pharma"],
-        "Corresponding Author Email": "johndoe@xyzpharma.com"
+        "Corresponding Author Email": "karthikpohane@xyzpharma.com"
     }
 ]
 ```
@@ -101,8 +105,11 @@ For example:
 
 Below is a screenshot of the program output for a sample search query:
 
-![Program Screenshot](path/to/screenshot.png)  
-*Replace the `path/to/screenshot.png` with the actual file path of your screenshot.*
+![image](https://github.com/user-attachments/assets/b5cd52a3-730a-4431-95ed-0f1698b14936)  
+![image](https://github.com/user-attachments/assets/e39b0a83-2810-4c2d-a716-6419223ee0bd)
+![image](https://github.com/user-attachments/assets/fa52068c-87aa-4cf7-8b1d-c0184e5165d2)
+
+
 
 ## Contributing
 
