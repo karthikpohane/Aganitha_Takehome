@@ -1,4 +1,4 @@
-# PubMed Paper Fetcher
+# Aganitha_Backend: PubMed Paper Fetcher
 
 ## Overview
 
@@ -30,24 +30,17 @@ Follow these steps to set up the project and run the code:
    cd Aganitha_Takehome
    ```
 
-2. **Install dependencies**:
+2. **Install dependencies using Poetry**:
 
-   Make sure you have Python 3.x installed. Then, install the required dependencies using pip:
+   Make sure you have **Poetry** installed. If not, you can install it by following the instructions from the [Poetry documentation](https://python-poetry.org/docs/#installation).
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   The required libraries are listed in `requirements.txt`. If you don't have a `requirements.txt` file, you can create it using:
+   Once Poetry is installed, run:
 
    ```bash
-   pip freeze > requirements.txt
+   poetry install
    ```
 
-   Ensure to include the following dependencies:
-
-   - `requests` (for making HTTP requests)
-   - `xml.etree.ElementTree` (for XML parsing)
+   This will install all the required dependencies listed in the `pyproject.toml` file.
 
 3. **Running the Script**:
 
@@ -60,15 +53,20 @@ Follow these steps to set up the project and run the code:
    print(papers)
    ```
 
-   This will print out a list of paper details based on your search query. You can also modify the script to save the data in CSV format or perform other operations.
+   Alternatively, you can use the Poetry run command to execute the script:
 
-   ```
+   ```bash
    poetry run get-papers-list "cancer immunotherapy" -f results.csv
    ```
 
+   This will fetch paper details related to the search query "cancer immunotherapy" and save them to `results.csv`.
+
 ## Tools and Libraries Used
 
-- **` requests`**: A simple HTTP library for Python that allows you to send HTTP requests to the PubMed API.
+- **Poetry**: A dependency management tool for Python that simplifies package management and project setup.
+  - [Poetry Documentation](https://python-poetry.org/docs/)
+
+- **`requests`**: A simple HTTP library for Python that allows you to send HTTP requests to the PubMed API.
   - [Requests Documentation](https://docs.python-requests.org/en/latest/)
   
 - **`xml.etree.ElementTree`**: A built-in Python library for parsing and creating XML. It's used here to parse the XML responses from the PubMed API.
@@ -92,7 +90,7 @@ For example:
 [
     {
         "PubmedID": "40145190",
-        "Title": "Antibiotic prophylaxis when taking corticosteroids."
+        "Title": "Antibiotic prophylaxis when taking corticosteroids.",
         "Publication Date": "2025 Mar 26",
         "Non-academic Authors": ["Karthik Pohane"],
         "Company Affiliations": ["XYZ Pharma"],
@@ -105,15 +103,13 @@ For example:
 
 Below is a screenshot of the program output for a sample search query:
 
-![image](https://github.com/user-attachments/assets/b5cd52a3-730a-4431-95ed-0f1698b14936)  
-![image](https://github.com/user-attachments/assets/e39b0a83-2810-4c2d-a716-6419223ee0bd)
-![image](https://github.com/user-attachments/assets/fa52068c-87aa-4cf7-8b1d-c0184e5165d2)
-
-
+![Program Output 1](https://github.com/user-attachments/assets/b5cd52a3-730a-4431-95ed-0f1698b14936)
+![Program Output 2](https://github.com/user-attachments/assets/e39b0a83-2810-4c2d-a716-6419223ee0bd)
+![Program Output 3](https://github.com/user-attachments/assets/fa52068c-87aa-4cf7-8b1d-c0184e5165d2)
 
 ## Contributing
 
-Please feel free to fix the repository and submit pull requests. If you find any bugs or have suggestions for improvements, please open an issue.
+Please feel free to fork the repository and submit pull requests. If you find any bugs or have suggestions for improvements, please open an issue.
 
 ## License
 
@@ -121,5 +117,5 @@ This project is open-source and available under the MIT License.
 
 ## Author
 
-Karthik Pohane \n
-Email: kartikpohane0612@gmail.com
+- Karthik Pohane  
+- Email: kartikpohane0612@gmail.com
