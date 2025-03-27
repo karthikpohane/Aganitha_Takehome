@@ -26,8 +26,8 @@ Follow these steps to set up the project and run the code:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/pubmed-paper-fetcher.git
-   cd pubmed-paper-fetcher
+   git clone https://github.com/karthikpohane/Aganitha_Takehome.git
+   cd Aganitha_Takehome
    ```
 
 2. **Install dependencies**:
