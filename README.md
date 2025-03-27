@@ -121,5 +121,5 @@ This project is open-source and available under the MIT License.
 
 ## Author
 
-Karthik Pohane
+Karthik Pohane \n
 Email: kartikpohane0612@gmail.com
