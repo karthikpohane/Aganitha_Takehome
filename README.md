@@ -115,7 +115,7 @@ The program allows you to fetch research papers based on a user-specified query 
 You can specify the query to search for papers directly in the command line.
 
 ```bash
-poetry run get-papers-list "your query here"
+poetry run get-papers-list "cancer immunotherapy"
 ```
 
 ### Command-line Options:
@@ -124,19 +124,19 @@ The following command-line options are available to customize your execution:
 - **`-h` or `--help`**: Displays usage instructions and available options.
 
     ```bash
-    poetry run get-papers-list -h
+    poetry run get-papers-list "cancer immunotherapy" --help
     ```
 
 - **`-d` or `--debug`**: Enables debug information during execution, which can help with troubleshooting or understanding the flow of the program. This option will print additional debug logs.
 
     ```bash
-    poetry run get-papers-list -d "your query here"
+    poetry run get-papers-list "cancer immunotherapy" --debug
     ```
 
 - **`-f` or `--file`**: Specifies the filename where the results will be saved. If this option is not provided, the program will print the results to the console by default.
 
     ```bash
-    poetry run get-papers-list -f results.csv "your query here"
+    poetry run get-papers-list "cancer immunotherapy" -f results.csv
     ```
 
 ## Contributing
