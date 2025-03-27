@@ -1,4 +1,4 @@
-Here's the complete `README.md` file, including code and a space for a screenshot:
+Here's the neatly formatted `README.md` file with a section for the screenshot and proper code explanations:
 
 ```markdown
 # PubMed Paper Fetcher
@@ -13,14 +13,14 @@ The project is organized into two main files:
 
 1. **`fetch.py`**:
    - Contains the main logic for interacting with the PubMed API to fetch paper IDs and their detailed information.
-   - `fetch_pubmed_papers`: Takes a search query and returns a list of paper details.
-   - `fetch_paper_details`: Fetches detailed information (like authors, title, and publication date) for each paper ID.
+   - **`fetch_pubmed_papers`**: Takes a search query and returns a list of paper details.
+   - **`fetch_paper_details`**: Fetches detailed information (like authors, title, and publication date) for each paper ID.
 
 2. **`utils.py`**:
    - Provides helper functions for extracting and processing data.
-   - `extract_authors_info`: Extracts author information, including identifying non-academic authors and company affiliations.
-   - `parse_email`: Parses the email of the corresponding author.
-   - `is_academic_affiliation` and `is_company_affiliation`: Used to classify authors based on their affiliation.
+   - **`extract_authors_info`**: Extracts author information, including identifying non-academic authors and company affiliations.
+   - **`parse_email`**: Parses the email of the corresponding author.
+   - **`is_academic_affiliation`** and **`is_company_affiliation`**: Used to classify authors based on their affiliation.
 
 ## Installation Instructions
 
@@ -47,7 +47,7 @@ Follow these steps to set up the project and run the code:
    pip freeze > requirements.txt
    ```
 
-   Make sure to include the following dependencies:
+   Ensure to include the following dependencies:
 
    - `requests` (for making HTTP requests)
    - `xml.etree.ElementTree` (for XML parsing)
@@ -122,4 +122,4 @@ Email: your.email@example.com
 ```
 
 ### Instructions:
-- **`path/to/screenshot.png`**: Replace this with the actual path to your screenshot file (you can upload the screenshot to the repository if needed).
+- **`path/to/screenshot.png`**: Replace this placeholder with the actual file path to your screenshot. You can upload the screenshot to your repository or save it in the `assets` folder within your project directory.
