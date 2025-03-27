@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "aganitha-takehome"
+version = "0.1.0"
+description = "Fetch papers from PubMed API and process results."
+authors = ["Karthik Pohane <kartikpohane0612@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "pubmed", from = "src" }]
+repository = "https://github.com/karthikpohane/Aganitha_Takehome"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"  # Updated for broader compatibility
+requests = "^2.31.0"  # For making API requests
+typer = "^0.9.0"  # For command-line interface
+pandas = "^2.1.0"  # For handling data and generating CSV
+email-validator = "^2.0.0.post2"  # For validating email addresses
+
+[tool.poetry.scripts]
+get-papers-list = "src.cli:app"  # Entry point for CLI command
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
