@@ -8,7 +8,6 @@ PUBMED_SUMMARY_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcg
 
 
 def fetch_pubmed_papers(query: str, max_results: int = 10) -> List[Dict]:
-    """Fetch papers from PubMed API using a query string."""
     params = {
         "db": "pubmed",
         "term": query,
@@ -27,7 +26,6 @@ def fetch_pubmed_papers(query: str, max_results: int = 10) -> List[Dict]:
 
 
 def fetch_paper_details(paper_ids: List[str]) -> List[Dict]:
-    """Fetch detailed information for a list of PubMed paper IDs."""
     if not paper_ids:
         return []
 
@@ -45,7 +43,6 @@ def fetch_paper_details(paper_ids: List[str]) -> List[Dict]:
     papers = []
     
     for doc in root.findall(".//DocSum"):
-        # Parsing details for each paper
         paper_data = {
             "PubmedID": doc.find(".//Id").text,
             "Title": doc.find(".//Item[@Name='Title']").text,
